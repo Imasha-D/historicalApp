@@ -1,0 +1,22 @@
+mat-toolbar {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.top {
+    justify-content: center !important;
+}
+
+.bottom {
+    height: 50px;
+
+    button {
+        color: white;
+        background-color: midnightblue;
+        height: inherit;
+        border: none;
+        box-shadow: 5px 5px 10px 1px #88888844;
+    }
+}

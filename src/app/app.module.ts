@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+import { MatButtonModule, MatCardModule, MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -10,8 +12,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    CommonModule,
+    MatToolbarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

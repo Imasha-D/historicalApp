@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PlaceService } from './services/place.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'historical-places-app';
+  title = 'Historical Places';
+
+  constructor(private placeService: PlaceService){
+
+}
+  onRandomPlacesClick(): void {
+    this.placeService.addRandomPlace().subscribe();
+  }
+
 }
